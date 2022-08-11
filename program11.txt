@@ -1,0 +1,23 @@
+/*subtract the product and sum of digits*(leet code program)*/
+
+#include <stdio.h>
+int main()
+{
+    int n;
+    int r;
+    int sum=0;
+    int p=1;
+        int m;
+    scanf("%d",&n);
+        while(n!=0)
+        {
+          r=n%10;
+            sum=sum+r;
+            p=p*r;
+            n=n/10;
+            m=p-sum;
+        }
+        printf("%d",m);
+        
+return 0;
+}
